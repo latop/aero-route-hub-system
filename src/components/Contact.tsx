@@ -14,7 +14,7 @@ const Contact = () => {
             Entre em <span className="text-aviation-green">Contato</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Solicite uma demonstração personalizada e descubra como a Latop pode transformar sua operação
+            Solicite uma demonstração personalizada e descubra como o SIGLA pode transformar sua operação
           </p>
         </div>
 

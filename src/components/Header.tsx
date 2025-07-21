@@ -18,12 +18,16 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Plane className="h-8 w-8 text-aviation-blue" />
-            <span className="text-2xl font-bold text-foreground">
-              <span className="text-aviation-blue">La</span>
-              <span className="text-aviation-green">top</span>
-            </span>
+          <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-1">
+              <Plane className="h-6 w-6 text-aviation-blue" />
+              <div className="w-px h-6 bg-border"></div>
+              <div className="w-4 h-4 bg-aviation-green rounded-sm"></div>
+            </div>
+            <div className="text-left">
+              <div className="text-2xl font-bold text-aviation-blue">SIGLA</div>
+              <div className="text-xs text-muted-foreground -mt-1">Sistema Integrado</div>
+            </div>
           </div>
 
           {/* Desktop Navigation */}

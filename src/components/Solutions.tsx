@@ -6,14 +6,16 @@ const Solutions = () => {
   const solutions = [
     {
       icon: Plane,
-      title: "Transporte Aéreo",
-      description: "Gestão completa para companhias aéreas, táxis aéreos e aviação executiva",
+      title: "SIGLA Aviação",
+      subtitle: "Sistema Integrado de Gestão de Linhas Aéreas",
+      description: "Solução completa para companhias aéreas, táxis aéreos e aviação executiva",
       features: ["Programação de voos", "Gestão de tripulantes", "Controle de manutenção", "Relatórios operacionais"],
       color: "text-aviation-blue"
     },
     {
       icon: Truck,
-      title: "Transporte Rodoviário",
+      title: "SIGLA Logística",
+      subtitle: "Sistema Integrado de Gestão e Logística",
       description: "Soluções para empresas de transporte rodoviário de carga e passageiros",
       features: ["Roteirização inteligente", "Controle de motoristas", "Gestão de frota", "Monitoramento em tempo real"],
       color: "text-aviation-green"
@@ -73,6 +75,11 @@ const Solutions = () => {
                 <CardTitle className="text-xl font-bold text-foreground mb-2">
                   {solution.title}
                 </CardTitle>
+                {solution.subtitle && (
+                  <div className="text-sm text-aviation-green font-medium mb-2">
+                    {solution.subtitle}
+                  </div>
+                )}
                 <CardDescription className="text-muted-foreground">
                   {solution.description}
                 </CardDescription>

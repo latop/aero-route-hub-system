@@ -7,16 +7,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <Plane className="h-8 w-8 text-aviation-green" />
-              <span className="text-2xl font-bold">
-                <span className="text-white">La</span>
-                <span className="text-aviation-green">top</span>
-              </span>
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="flex items-center space-x-1">
+                <Plane className="h-6 w-6 text-aviation-green" />
+                <div className="w-px h-6 bg-white/20"></div>
+                <div className="w-4 h-4 bg-aviation-green rounded-sm"></div>
+              </div>
+              <div className="text-left">
+                <div className="text-2xl font-bold text-white">SIGLA</div>
+                <div className="text-xs text-white/60 -mt-1">Sistema Integrado</div>
+              </div>
             </div>
             <p className="text-white/80 mb-6 max-w-md">
-              Especialista em sistemas de gestão para empresas de transporte aéreo e rodoviário. 
-              Mais de 15 anos transformando operações e otimizando recursos.
+              Sistema Integrado de Gestão de Linhas Aéreas e Logística. 
+              Mais de 15 anos transformando operações e otimizando recursos para empresas de transporte.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-white/80">
@@ -38,8 +42,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-aviation-green">Soluções</h3>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#" className="hover:text-aviation-green transition-colors">Transporte Aéreo</a></li>
-              <li><a href="#" className="hover:text-aviation-green transition-colors">Transporte Rodoviário</a></li>
+              <li><a href="#" className="hover:text-aviation-green transition-colors">SIGLA Aviação</a></li>
+              <li><a href="#" className="hover:text-aviation-green transition-colors">SIGLA Logística</a></li>
               <li><a href="#" className="hover:text-aviation-green transition-colors">Gestão de Tripulantes</a></li>
               <li><a href="#" className="hover:text-aviation-green transition-colors">Business Intelligence</a></li>
               <li><a href="#" className="hover:text-aviation-green transition-colors">Documentação Digital</a></li>
@@ -63,7 +67,7 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm">
-              © 2024 Latop. Todos os direitos reservados.
+              © 2024 SIGLA - Sistema Integrado de Gestão. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-white/60 hover:text-aviation-green transition-colors text-sm">

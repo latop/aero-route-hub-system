@@ -18,10 +18,10 @@ const Clients = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Clientes que <span className="text-aviation-green">Confiam</span> na Latop
+            Clientes que <span className="text-aviation-green">Confiam</span> no SIGLA
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Empresas de diversos portes utilizam nossas soluções para otimizar suas operações
+            Empresas de diversos portes utilizam o SIGLA para otimizar suas operações
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const Clients = () => {
           <Card className="bg-aviation-light border-0 shadow-md">
             <CardContent className="p-8">
               <blockquote className="text-lg text-muted-foreground mb-4 italic">
-                "A Latop revolucionou nossa operação. Conseguimos reduzir em 30% o tempo de planejamento 
+                "O SIGLA revolucionou nossa operação. Conseguimos reduzir em 30% o tempo de planejamento 
                 de voos e melhorar significativamente a satisfação dos nossos tripulantes."
               </blockquote>
               <div className="flex items-center">
@@ -69,7 +69,7 @@ const Clients = () => {
           <Card className="bg-aviation-light border-0 shadow-md">
             <CardContent className="p-8">
               <blockquote className="text-lg text-muted-foreground mb-4 italic">
-                "O sistema de gestão de tripulantes da Latop é excepcional. Automatizou processos 
+                "O sistema de gestão de tripulantes do SIGLA é excepcional. Automatizou processos 
                 que antes tomavam horas e garantiu 100% de conformidade com as regulamentações."
               </blockquote>
               <div className="flex items-center">

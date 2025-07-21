@@ -23,16 +23,19 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
-            <span className="block">Sistema de Gestão</span>
+            <span className="block">SIGLA</span>
             <span className="block text-aviation-green animate-slide-in-right">
-              de Voos e Tripulantes
+              Sistema Integrado
+            </span>
+            <span className="block text-3xl md:text-4xl lg:text-5xl mt-2 text-white/90">
+              de Gestão de Linhas Aéreas
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in">
-            Centenas de empresas de transporte aéreo e rodoviário confiam na Latop
-            para gerenciar suas programações, vendas, despacho, tripulação e relatórios.
+            Centenas de empresas de transporte aéreo e rodoviário confiam no SIGLA
+            para gerenciar suas operações, tripulação, frotas e logística com máxima eficiência.
           </p>
 
           {/* CTA Buttons */}
