@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-white/80 mb-6 max-w-md">
-              Sistema Integrado de Gestão de Linhas Aéreas e Logística. 
+              Sistema Integrado de Gestão de Linhas Aéreas e Carga. 
               Mais de 15 anos transformando operações e otimizando recursos para empresas de transporte.
             </p>
             <div className="space-y-2">
@@ -42,8 +42,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-aviation-green">Soluções</h3>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#" className="hover:text-aviation-green transition-colors">SIGLA Aviação</a></li>
-              <li><a href="#" className="hover:text-aviation-green transition-colors">SIGLA Logística</a></li>
+              <li><a href="/sigla-aviacao" className="hover:text-aviation-green transition-colors">SIGLA Aviação</a></li>
+              <li><a href="/sigla-carga" className="hover:text-aviation-green transition-colors">SIGLA Carga</a></li>
               <li><a href="#" className="hover:text-aviation-green transition-colors">Gestão de Tripulantes</a></li>
               <li><a href="#" className="hover:text-aviation-green transition-colors">Business Intelligence</a></li>
               <li><a href="#" className="hover:text-aviation-green transition-colors">Documentação Digital</a></li>

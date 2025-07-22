@@ -14,7 +14,7 @@ const Solutions = () => {
     },
     {
       icon: Truck,
-      title: "SIGLA Logística",
+      title: "SIGLA Carga",
       subtitle: "Sistema Integrado de Gestão e Logística",
       description: "Soluções para empresas de transporte rodoviário de carga e passageiros",
       features: ["Roteirização inteligente", "Controle de motoristas", "Gestão de frota", "Monitoramento em tempo real"],

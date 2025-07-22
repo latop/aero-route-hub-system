@@ -35,7 +35,7 @@ const Hero = () => {
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in">
             Centenas de empresas de transporte aéreo e rodoviário confiam no SIGLA
-            para gerenciar suas operações, tripulação, frotas e logística com máxima eficiência.
+            para gerenciar suas operações, tripulação, frotas e carga com máxima eficiência.
           </p>
 
           {/* CTA Buttons */}
