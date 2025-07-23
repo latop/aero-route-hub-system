@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Plane, Menu } from "lucide-react";
 import { useState } from "react";
+import latopLogo from "@/assets/latop-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,16 +19,12 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="flex items-center space-x-1">
-              <Plane className="h-6 w-6 text-aviation-blue" />
-              <div className="w-px h-6 bg-border"></div>
-              <div className="w-4 h-4 bg-aviation-green rounded-sm"></div>
-            </div>
-            <div className="text-left">
-              <div className="text-2xl font-bold text-aviation-blue">SIGLA</div>
-              <div className="text-xs text-muted-foreground -mt-1">Sistema Integrado</div>
-            </div>
+          <div className="flex items-center">
+            <img 
+              src={latopLogo} 
+              alt="LATOP - Innovation in Logistics for Transport" 
+              className="h-8"
+            />
           </div>
 
           {/* Desktop Navigation */}

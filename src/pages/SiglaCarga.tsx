@@ -14,6 +14,7 @@ import {
   Clock,
   Fuel
 } from "lucide-react";
+import siglaCargaLogo from "@/assets/sigla-carga-logo.png";
 
 const SiglaCarga = () => {
   const features = [
@@ -67,14 +68,13 @@ const SiglaCarga = () => {
         <div className="absolute inset-0 bg-[url('/src/assets/hero-aviation.jpg')] bg-cover bg-center opacity-20 grayscale"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8">
-              <Truck className="h-5 w-5 text-aviation-green" />
-              <span className="text-white font-medium">Sistema Integrado de Gestão e Logística</span>
+            <div className="mb-8">
+              <img 
+                src={siglaCargaLogo} 
+                alt="SIGLA - Sistema Integrado de Gestão e Logística" 
+                className="h-20 mx-auto mb-6"
+              />
             </div>
-            
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              SIGLA <span className="text-aviation-green">Carga</span>
-            </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
               A solução completa para gestão de transporte rodoviário de carga.

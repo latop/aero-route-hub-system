@@ -1,4 +1,5 @@
 import { Plane, Phone, Mail, MapPin } from "lucide-react";
+import latopLogo from "@/assets/latop-logo.png";
 
 const Footer = () => {
   return (
@@ -7,16 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="flex items-center space-x-1">
-                <Plane className="h-6 w-6 text-aviation-green" />
-                <div className="w-px h-6 bg-white/20"></div>
-                <div className="w-4 h-4 bg-aviation-green rounded-sm"></div>
-              </div>
-              <div className="text-left">
-                <div className="text-2xl font-bold text-white">SIGLA</div>
-                <div className="text-xs text-white/60 -mt-1">Sistema Integrado</div>
-              </div>
+            <div className="mb-4">
+              <img 
+                src={latopLogo} 
+                alt="LATOP - Innovation in Logistics for Transport" 
+                className="h-8 brightness-0 invert"
+              />
             </div>
             <p className="text-white/80 mb-6 max-w-md">
               Sistema Integrado de Gestão de Linhas Aéreas e Carga. 
