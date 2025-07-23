@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-aviation.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -23,19 +25,18 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
-            <span className="block">SIGLA</span>
+            <span className="block">{t('hero.title')}</span>
             <span className="block text-aviation-green animate-slide-in-right">
-              Sistema Integrado
+              {t('hero.subtitle')}
             </span>
             <span className="block text-3xl md:text-4xl lg:text-5xl mt-2 text-white/90">
-              de Gestão de Linhas Aéreas
+              {t('hero.subtitle2')}
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in">
-            Centenas de empresas de transporte aéreo e rodoviário confiam no SIGLA
-            para gerenciar suas operações, tripulação, frotas e carga com máxima eficiência.
+            {t('hero.description')}
           </p>
 
           {/* CTA Buttons */}
@@ -45,7 +46,7 @@ const Hero = () => {
               size="lg" 
               className="text-lg px-8 py-6 min-w-[200px]"
             >
-              Demonstração Gratuita
+              {t('hero.cta1')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             
@@ -55,7 +56,7 @@ const Hero = () => {
               className="text-lg px-8 py-6 min-w-[200px] border-white/30 text-white hover:bg-white/10 hover:border-white/50"
             >
               <Play className="mr-2 h-5 w-5" />
-              Ver Demonstração
+              {t('hero.cta2')}
             </Button>
           </div>
 
@@ -63,15 +64,15 @@ const Hero = () => {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-fade-in">
             <div className="text-white">
               <div className="text-3xl md:text-4xl font-bold text-aviation-green mb-2">200+</div>
-              <div className="text-lg opacity-90">Empresas Atendidas</div>
+              <div className="text-lg opacity-90">{t('hero.stats.companies')}</div>
             </div>
             <div className="text-white">
               <div className="text-3xl md:text-4xl font-bold text-aviation-green mb-2">15+</div>
-              <div className="text-lg opacity-90">Anos de Experiência</div>
+              <div className="text-lg opacity-90">{t('hero.stats.experience')}</div>
             </div>
             <div className="text-white">
               <div className="text-3xl md:text-4xl font-bold text-aviation-green mb-2">24/7</div>
-              <div className="text-lg opacity-90">Suporte Técnico</div>
+              <div className="text-lg opacity-90">{t('hero.stats.support')}</div>
             </div>
           </div>
         </div>

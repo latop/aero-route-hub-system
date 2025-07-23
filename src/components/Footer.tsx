@@ -1,5 +1,5 @@
 import { Plane, Phone, Mail, MapPin } from "lucide-react";
-import latopLogo from "@/assets/latop-logo.png";
+import latopLogo from "@/assets/latop-logo-official.png";
 
 const Footer = () => {
   return (

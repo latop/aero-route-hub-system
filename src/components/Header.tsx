@@ -1,17 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Plane, Menu } from "lucide-react";
 import { useState } from "react";
-import latopLogo from "@/assets/latop-logo.png";
+import latopLogo from "@/assets/latop-logo-official.png";
+import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navigation = [
-    { name: "Soluções", href: "#solucoes" },
-    { name: "Produtos", href: "#produtos" },
-    { name: "Clientes", href: "#clientes" },
-    { name: "Sobre", href: "#sobre" },
-    { name: "Contato", href: "#contato" },
+    { name: t('nav.solutions'), href: "#solucoes" },
+    { name: t('nav.products'), href: "#produtos" },
+    { name: t('nav.clients'), href: "#clientes" },
+    { name: t('nav.about'), href: "#sobre" },
+    { name: t('nav.contact'), href: "#contato" },
   ];
 
   return (
@@ -40,13 +43,14 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons and Language Selector */}
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageSelector />
             <Button variant="ghost" size="sm">
-              Login
+              {t('nav.login')}
             </Button>
             <Button variant="hero" size="sm">
-              Demonstração Gratuita
+              {t('nav.demo')}
             </Button>
           </div>
 
@@ -74,11 +78,12 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
+                <LanguageSelector />
                 <Button variant="ghost" size="sm">
-                  Login
+                  {t('nav.login')}
                 </Button>
                 <Button variant="hero" size="sm">
-                  Demonstração Gratuita
+                  {t('nav.demo')}
                 </Button>
               </div>
             </nav>

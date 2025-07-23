@@ -1,8 +1,10 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Plane, Truck, Users, Calendar, FileText, BarChart3 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Solutions = () => {
+  const { t } = useLanguage();
   const solutions = [
     {
       icon: Plane,
