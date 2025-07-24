@@ -10,6 +10,7 @@ const Header = () => {
   const { t } = useLanguage();
 
   const navigation = [
+    { name: t('nav.home'), href: "/" },
     { name: t('nav.solutions'), href: "#solucoes", submenu: [
       { name: "SIGLA Aviação", href: "/sigla-aviacao" },
       { name: "SIGLA Carga", href: "/sigla-carga" }
@@ -18,7 +19,6 @@ const Header = () => {
       { name: "Produtos Aéreos", href: "/produtos/aereo" },
       { name: "Produtos Carga", href: "/produtos/carga" }
     ]},
-    { name: t('nav.clients'), href: "#clientes" },
     { name: t('nav.about'), href: "/sobre" },
     { name: t('nav.contact'), href: "/contato" },
   ];
@@ -66,11 +66,12 @@ const Header = () => {
           {/* CTA Buttons and Language Selector */}
           <div className="hidden md:flex items-center space-x-4">
             <LanguageSelector />
-            <Button variant="ghost" size="sm">
-              {t('nav.login')}
-            </Button>
-            <Button variant="hero" size="sm">
-              {t('nav.demo')}
+            <Button 
+              variant="ghost" 
+              size="sm"
+              onClick={() => window.open('https://siac.latop.com.br/', '_blank')}
+            >
+              {t('nav.support')}
             </Button>
           </div>
 
@@ -114,11 +115,12 @@ const Header = () => {
               ))}
               <div className="flex flex-col space-y-2 pt-4">
                 <LanguageSelector />
-                <Button variant="ghost" size="sm">
-                  {t('nav.login')}
-                </Button>
-                <Button variant="hero" size="sm">
-                  {t('nav.demo')}
+                <Button 
+                  variant="ghost" 
+                  size="sm"
+                  onClick={() => window.open('https://siac.latop.com.br/', '_blank')}
+                >
+                  {t('nav.support')}
                 </Button>
               </div>
             </nav>
