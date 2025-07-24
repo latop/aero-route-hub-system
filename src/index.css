@@ -17,19 +17,19 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 24% 16%;
 
-    /* Aviation blue inspired by Leon Software */
-    --primary: 221 83% 24%;
+    /* Aviation blue inspired by provided colors */
+    --primary: 202 78% 21%;
     --primary-foreground: 0 0% 98%;
-    --primary-dark: 221 85% 18%;
+    --primary-dark: 202 85% 15%;
 
-    /* Aviation green accent */
-    --secondary: 135 80% 45%;
+    /* Aviation blue variations */
+    --secondary: 203 74% 57%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 220 13% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 135 80% 45%;
+    --accent: 203 74% 57%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
@@ -37,19 +37,20 @@ All colors MUST be HSL.
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 221 83% 24%;
+    --ring: 202 78% 21%;
 
     --radius: 0.75rem;
 
-    /* Aviation-specific colors */
-    --aviation-blue: 221 83% 24%;
-    --aviation-blue-dark: 221 85% 18%;
-    --aviation-green: 135 80% 45%;
+    /* Aviation-specific colors using provided palette */
+    --aviation-blue: 202 78% 21%;        /* #0c4060 */
+    --aviation-blue-light: 203 78% 71%;  /* #7cc1ed */
+    --aviation-blue-medium: 203 74% 57%; /* #40a4e3 */
+    --aviation-blue-dark: 202 85% 15%;
     --aviation-light: 220 30% 97%;
     
-    /* Gradients */
+    /* Gradients using new blue palette */
     --gradient-hero: linear-gradient(135deg, hsl(var(--aviation-blue-dark)), hsl(var(--aviation-blue)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--aviation-green)), hsl(135 75% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--aviation-blue-medium)), hsl(var(--aviation-blue-light)));
     
     /* Patterns and effects */
     --pattern-dots: radial-gradient(circle at 1px 1px, hsl(var(--aviation-blue) / 0.15) 1px, transparent 0);
@@ -103,9 +104,10 @@ All colors MUST be HSL.
     --ring: 135 80% 45%;
 
     /* Dark mode aviation colors */
-    --aviation-blue: 221 83% 35%;
-    --aviation-blue-dark: 221 85% 18%;
-    --aviation-green: 135 80% 45%;
+    --aviation-blue: 203 74% 57%;
+    --aviation-blue-light: 203 78% 71%;
+    --aviation-blue-medium: 203 74% 57%;
+    --aviation-blue-dark: 202 78% 21%;
     --aviation-light: 221 70% 12%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
