@@ -18,7 +18,7 @@ const Clients = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Clientes que <span className="text-aviation-green">Confiam</span> no SIGLA
+            Clientes que <span className="text-aviation-blue">Confiam</span> no SIGLA
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Empresas de diversos portes utilizam o SIGLA para otimizar suas operações

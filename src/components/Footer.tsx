@@ -37,25 +37,25 @@ const Footer = () => {
 
           {/* Soluções */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-aviation-green">Soluções</h3>
+            <h3 className="text-lg font-semibold mb-4 text-aviation-blue">Soluções</h3>
             <ul className="space-y-2 text-white/80">
-              <li><a href="/sigla-aviacao" className="hover:text-aviation-green transition-colors">SIGLA Aviação</a></li>
-              <li><a href="/sigla-carga" className="hover:text-aviation-green transition-colors">SIGLA Carga</a></li>
-              <li><a href="#" className="hover:text-aviation-green transition-colors">Gestão de Tripulantes</a></li>
-              <li><a href="#" className="hover:text-aviation-green transition-colors">Business Intelligence</a></li>
-              <li><a href="#" className="hover:text-aviation-green transition-colors">Documentação Digital</a></li>
+              <li><a href="/sigla-aviacao" className="hover:text-aviation-blue transition-colors">SIGLA Aviação</a></li>
+              <li><a href="/sigla-carga" className="hover:text-aviation-blue transition-colors">SIGLA Carga</a></li>
+              <li><a href="#" className="hover:text-aviation-blue transition-colors">Gestão de Tripulantes</a></li>
+              <li><a href="#" className="hover:text-aviation-blue transition-colors">Business Intelligence</a></li>
+              <li><a href="#" className="hover:text-aviation-blue transition-colors">Documentação Digital</a></li>
             </ul>
           </div>
 
           {/* Empresa */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-aviation-green">Empresa</h3>
+            <h3 className="text-lg font-semibold mb-4 text-aviation-blue">Empresa</h3>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#sobre" className="hover:text-aviation-green transition-colors">Sobre Nós</a></li>
-              <li><a href="#clientes" className="hover:text-aviation-green transition-colors">Clientes</a></li>
-              <li><a href="#" className="hover:text-aviation-green transition-colors">Carreiras</a></li>
-              <li><a href="#" className="hover:text-aviation-green transition-colors">Blog</a></li>
-              <li><a href="#contato" className="hover:text-aviation-green transition-colors">Contato</a></li>
+              <li><a href="#sobre" className="hover:text-aviation-blue transition-colors">Sobre Nós</a></li>
+              <li><a href="#clientes" className="hover:text-aviation-blue transition-colors">Clientes</a></li>
+              <li><a href="#" className="hover:text-aviation-blue transition-colors">Carreiras</a></li>
+              <li><a href="#" className="hover:text-aviation-blue transition-colors">Blog</a></li>
+              <li><a href="#contato" className="hover:text-aviation-blue transition-colors">Contato</a></li>
             </ul>
           </div>
         </div>
@@ -67,13 +67,13 @@ const Footer = () => {
               © 2024 SIGLA - Sistema Integrado de Gestão. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-white/60 hover:text-aviation-green transition-colors text-sm">
+              <a href="#" className="text-white/60 hover:text-aviation-blue transition-colors text-sm">
                 Política de Privacidade
               </a>
-              <a href="#" className="text-white/60 hover:text-aviation-green transition-colors text-sm">
+              <a href="#" className="text-white/60 hover:text-aviation-blue transition-colors text-sm">
                 Termos de Uso
               </a>
-              <a href="#" className="text-white/60 hover:text-aviation-green transition-colors text-sm">
+              <a href="#" className="text-white/60 hover:text-aviation-blue transition-colors text-sm">
                 Suporte
               </a>
             </div>

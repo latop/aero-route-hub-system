@@ -26,7 +26,7 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
             <span className="block">{t('hero.title')}</span>
-            <span className="block text-aviation-green animate-slide-in-right">
+            <span className="block text-aviation-blue animate-slide-in-right">
               {t('hero.subtitle')}
             </span>
             <span className="block text-3xl md:text-4xl lg:text-5xl mt-2 text-white/90">
@@ -63,15 +63,15 @@ const Hero = () => {
           {/* Stats */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-fade-in">
             <div className="text-white">
-              <div className="text-3xl md:text-4xl font-bold text-aviation-green mb-2">200+</div>
+              <div className="text-3xl md:text-4xl font-bold text-aviation-blue mb-2">200+</div>
               <div className="text-lg opacity-90">{t('hero.stats.companies')}</div>
             </div>
             <div className="text-white">
-              <div className="text-3xl md:text-4xl font-bold text-aviation-green mb-2">15+</div>
+              <div className="text-3xl md:text-4xl font-bold text-aviation-blue mb-2">15+</div>
               <div className="text-lg opacity-90">{t('hero.stats.experience')}</div>
             </div>
             <div className="text-white">
-              <div className="text-3xl md:text-4xl font-bold text-aviation-green mb-2">24/7</div>
+              <div className="text-3xl md:text-4xl font-bold text-aviation-blue mb-2">24/7</div>
               <div className="text-lg opacity-90">{t('hero.stats.support')}</div>
             </div>
           </div>
