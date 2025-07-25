@@ -51,9 +51,9 @@ const Hero = () => {
             </Button>
             
             <Button 
-              variant="outline" 
+              variant="secondary" 
               size="lg" 
-              className="text-lg px-8 py-6 min-w-[200px] border-white/30 text-white hover:bg-white/10 hover:border-white/50"
+              className="text-lg px-8 py-6 min-w-[200px] border-white/30 bg-white/10 text-white hover:bg-white/20 hover:border-white/50"
             >
               <Play className="mr-2 h-5 w-5" />
               {t('hero.cta2')}

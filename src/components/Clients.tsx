@@ -1,6 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Clients = () => {
+  const { t } = useLanguage();
+  
   // Logos fictícios de clientes (podem ser substituídos por logos reais)
   const clients = [
     { name: "AeroTransporte", logo: "AT" },
@@ -18,10 +21,10 @@ const Clients = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Clientes que <span className="text-aviation-blue">Confiam</span> no SIGLA
+            {t('clients.title').split(' ').slice(0, 2).join(' ')} <span className="text-aviation-blue">{t('clients.title').split(' ').slice(2).join(' ')}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Empresas de diversos portes utilizam o SIGLA para otimizar suas operações
+            {t('clients.subtitle')}
           </p>
         </div>
 
@@ -48,41 +51,39 @@ const Clients = () => {
 
         {/* Testimonials */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Card className="bg-aviation-light border-0 shadow-md">
-            <CardContent className="p-8">
-              <blockquote className="text-lg text-muted-foreground mb-4 italic">
-                "O SIGLA revolucionou nossa operação. Conseguimos reduzir em 30% o tempo de planejamento 
-                de voos e melhorar significativamente a satisfação dos nossos tripulantes."
-              </blockquote>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center text-white font-bold mr-4">
-                  JM
+            <Card className="bg-aviation-light border-0 shadow-md">
+              <CardContent className="p-8">
+                <blockquote className="text-lg text-muted-foreground mb-4 italic">
+                  "{t('clients.testimonials.first.text')}"
+                </blockquote>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center text-white font-bold mr-4">
+                    JM
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">{t('clients.testimonials.first.author')}</p>
+                    <p className="text-sm text-muted-foreground">{t('clients.testimonials.first.position')}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-semibold text-foreground">João Martins</p>
-                  <p className="text-sm text-muted-foreground">Diretor Operacional - AeroTransporte</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
 
-          <Card className="bg-aviation-light border-0 shadow-md">
-            <CardContent className="p-8">
-              <blockquote className="text-lg text-muted-foreground mb-4 italic">
-                "O sistema de gestão de tripulantes do SIGLA é excepcional. Automatizou processos 
-                que antes tomavam horas e garantiu 100% de conformidade com as regulamentações."
-              </blockquote>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center text-white font-bold mr-4">
-                  AS
+            <Card className="bg-aviation-light border-0 shadow-md">
+              <CardContent className="p-8">
+                <blockquote className="text-lg text-muted-foreground mb-4 italic">
+                  "{t('clients.testimonials.second.text')}"
+                </blockquote>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center text-white font-bold mr-4">
+                    AS
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">{t('clients.testimonials.second.author')}</p>
+                    <p className="text-sm text-muted-foreground">{t('clients.testimonials.second.position')}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-semibold text-foreground">Ana Silva</p>
-                  <p className="text-sm text-muted-foreground">Gerente de Recursos Humanos - Sky Cargo</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
         </div>
       </div>
     </section>

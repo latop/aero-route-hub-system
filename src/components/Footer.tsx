@@ -1,7 +1,10 @@
 import { Plane, Phone, Mail, MapPin } from "lucide-react";
 import latopLogo from "@/assets/latop-logo-official.png";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-aviation-blue-dark text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -16,8 +19,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-white/80 mb-6 max-w-md">
-              Sistema Integrado de Gestão de Linhas Aéreas e Carga. 
-              Mais de 15 anos transformando operações e otimizando recursos para empresas de transporte.
+              {t('footer.description')}
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-white/80">
@@ -37,25 +39,25 @@ const Footer = () => {
 
           {/* Soluções */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-aviation-blue">Soluções</h3>
+            <h3 className="text-lg font-semibold mb-4 text-aviation-blue">{t('footer.solutions')}</h3>
             <ul className="space-y-2 text-white/80">
-              <li><a href="/sigla-aviacao" className="hover:text-aviation-blue transition-colors">SIGLA Aviação</a></li>
-              <li><a href="/sigla-carga" className="hover:text-aviation-blue transition-colors">SIGLA Carga</a></li>
-              <li><a href="#" className="hover:text-aviation-blue transition-colors">Gestão de Tripulantes</a></li>
-              <li><a href="#" className="hover:text-aviation-blue transition-colors">Business Intelligence</a></li>
-              <li><a href="#" className="hover:text-aviation-blue transition-colors">Documentação Digital</a></li>
+              <li><a href="/sigla-aviacao" className="hover:text-aviation-blue transition-colors">{t('footer.links.aviation')}</a></li>
+              <li><a href="/sigla-carga" className="hover:text-aviation-blue transition-colors">{t('footer.links.cargo')}</a></li>
+              <li><a href="#" className="hover:text-aviation-blue transition-colors">{t('footer.links.crew')}</a></li>
+              <li><a href="#" className="hover:text-aviation-blue transition-colors">{t('footer.links.bi')}</a></li>
+              <li><a href="#" className="hover:text-aviation-blue transition-colors">{t('footer.links.docs')}</a></li>
             </ul>
           </div>
 
           {/* Empresa */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-aviation-blue">Empresa</h3>
+            <h3 className="text-lg font-semibold mb-4 text-aviation-blue">{t('footer.company')}</h3>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#sobre" className="hover:text-aviation-blue transition-colors">Sobre Nós</a></li>
-              <li><a href="#clientes" className="hover:text-aviation-blue transition-colors">Clientes</a></li>
-              <li><a href="#" className="hover:text-aviation-blue transition-colors">Carreiras</a></li>
-              <li><a href="#" className="hover:text-aviation-blue transition-colors">Blog</a></li>
-              <li><a href="#contato" className="hover:text-aviation-blue transition-colors">Contato</a></li>
+              <li><a href="#sobre" className="hover:text-aviation-blue transition-colors">{t('footer.links.about')}</a></li>
+              <li><a href="#clientes" className="hover:text-aviation-blue transition-colors">{t('footer.links.clients')}</a></li>
+              <li><a href="#" className="hover:text-aviation-blue transition-colors">{t('footer.links.careers')}</a></li>
+              <li><a href="#" className="hover:text-aviation-blue transition-colors">{t('footer.links.blog')}</a></li>
+              <li><a href="#contato" className="hover:text-aviation-blue transition-colors">{t('footer.links.contact')}</a></li>
             </ul>
           </div>
         </div>
@@ -64,17 +66,17 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm">
-              © 2024 SIGLA - Sistema Integrado de Gestão. Todos os direitos reservados.
+              {t('footer.copyright')}
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-white/60 hover:text-aviation-blue transition-colors text-sm">
-                Política de Privacidade
+                {t('footer.links.privacy')}
               </a>
               <a href="#" className="text-white/60 hover:text-aviation-blue transition-colors text-sm">
-                Termos de Uso
+                {t('footer.links.terms')}
               </a>
               <a href="#" className="text-white/60 hover:text-aviation-blue transition-colors text-sm">
-                Suporte
+                {t('footer.links.support')}
               </a>
             </div>
           </div>

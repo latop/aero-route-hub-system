@@ -77,6 +77,13 @@ const translations = {
     'features.custom.kpis': 'KPIs personalizados',
     'features.flexible.export': 'Exportação flexível',
     'features.predictive.analytics': 'Análises preditivas',
+    
+    // Pages
+    'pages.aviation.title': 'SIGLA Aviação',
+    'pages.cargo.title': 'SIGLA Carga',
+    'pages.about.title': 'Sobre Nós',
+    'pages.contact.title': 'Contato',
+    'pages.products.title': 'Produtos',
   },
   en: {
     // Header
@@ -144,6 +151,13 @@ const translations = {
     'features.custom.kpis': 'Custom KPIs',
     'features.flexible.export': 'Flexible export',
     'features.predictive.analytics': 'Predictive analytics',
+    
+    // Pages
+    'pages.aviation.title': 'SIGLA Aviation',
+    'pages.cargo.title': 'SIGLA Cargo',
+    'pages.about.title': 'About Us',
+    'pages.contact.title': 'Contact',
+    'pages.products.title': 'Products',
   },
   es: {
     // Header
@@ -211,6 +225,13 @@ const translations = {
     'features.custom.kpis': 'KPIs personalizados',
     'features.flexible.export': 'Exportación flexible',
     'features.predictive.analytics': 'Análisis predictivos',
+    
+    // Pages
+    'pages.aviation.title': 'SIGLA Aviación',
+    'pages.cargo.title': 'SIGLA Carga', 
+    'pages.about.title': 'Acerca de Nosotros',
+    'pages.contact.title': 'Contacto',
+    'pages.products.title': 'Productos',
   }
 };
 
