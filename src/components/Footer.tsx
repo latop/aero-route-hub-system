@@ -1,5 +1,5 @@
 import { Plane, Phone, Mail, MapPin } from "lucide-react";
-import latopLogo from "@/assets/latop-logo-official.png";
+import siglaLogo from "@/assets/sigla-aviacao-logo-full.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
@@ -13,9 +13,9 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="mb-4">
               <img 
-                src={latopLogo} 
-                alt="LATOP - Innovation in Logistics for Transport" 
-                className="h-8 brightness-0 invert"
+                src={siglaLogo} 
+                alt="SIGLA - Sistema Integrado de Gestão" 
+                className="h-10 brightness-0 invert"
               />
             </div>
             <p className="text-white/80 mb-6 max-w-md">

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Plane, Menu } from "lucide-react";
 import { useState } from "react";
-import latopLogo from "@/assets/latop-logo-official.png";
+import siglaLogo from "@/assets/sigla-aviacao-logo-full.png";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -30,9 +30,9 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src={latopLogo} 
-              alt="LATOP - Innovation in Logistics for Transport" 
-              className="h-8"
+              src={siglaLogo} 
+              alt="SIGLA - Sistema Integrado de Gestão de Linhas Aéreas" 
+              className="h-10"
             />
           </div>
 
