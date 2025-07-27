@@ -86,6 +86,25 @@ const translations = {
     'contact.title': 'Fale Conosco',
     'contact.subtitle': 'Entre em contato e descubra como o SIGLA pode otimizar suas operações',
     
+    // Footer
+    'footer.description': 'Sistema integrado para gestão completa de operações de transporte aéreo e rodoviário.',
+    'footer.solutions': 'Soluções',
+    'footer.company': 'Empresa',
+    'footer.links.aviation': 'SIGLA Aviação',
+    'footer.links.cargo': 'SIGLA Carga',
+    'footer.links.crew': 'Gestão de Tripulantes',
+    'footer.links.bi': 'Business Intelligence',
+    'footer.links.docs': 'Documentação Digital',
+    'footer.links.about': 'Sobre Nós',
+    'footer.links.clients': 'Clientes',
+    'footer.links.careers': 'Carreiras',
+    'footer.links.blog': 'Blog',
+    'footer.links.contact': 'Contato',
+    'footer.links.privacy': 'Política de Privacidade',
+    'footer.links.terms': 'Termos de Serviço',
+    'footer.links.support': 'Suporte',
+    'footer.copyright': '© 2024 LATOP - Sistema Integrado de Gestão de Linhas Aéreas. Todos os direitos reservados.',
+    
     // Pages
     'pages.aviation.title': 'SIGLA Aviação',
     'pages.cargo.title': 'SIGLA Carga',
@@ -168,6 +187,25 @@ const translations = {
     'contact.title': 'Contact Us',
     'contact.subtitle': 'Get in touch and discover how SIGLA can optimize your operations',
     
+    // Footer
+    'footer.description': 'Integrated system for complete management of air and road transport operations.',
+    'footer.solutions': 'Solutions',
+    'footer.company': 'Company',
+    'footer.links.aviation': 'SIGLA Aviation',
+    'footer.links.cargo': 'SIGLA Cargo',
+    'footer.links.crew': 'Crew Management',
+    'footer.links.bi': 'Business Intelligence',
+    'footer.links.docs': 'Digital Documentation',
+    'footer.links.about': 'About Us',
+    'footer.links.clients': 'Clients',
+    'footer.links.careers': 'Careers',
+    'footer.links.blog': 'Blog',
+    'footer.links.contact': 'Contact',
+    'footer.links.privacy': 'Privacy Policy',
+    'footer.links.terms': 'Terms of Service',
+    'footer.links.support': 'Support',
+    'footer.copyright': '© 2024 LATOP - Integrated Airline Management System. All rights reserved.',
+    
     // Pages
     'pages.aviation.title': 'SIGLA Aviation',
     'pages.cargo.title': 'SIGLA Cargo',
@@ -249,6 +287,25 @@ const translations = {
     // Contact
     'contact.title': 'Contáctanos',
     'contact.subtitle': 'Ponte en contacto y descubre cómo SIGLA puede optimizar tus operaciones',
+    
+    // Footer
+    'footer.description': 'Sistema integrado para gestión completa de operaciones de transporte aéreo y terrestre.',
+    'footer.solutions': 'Soluciones',
+    'footer.company': 'Empresa',
+    'footer.links.aviation': 'SIGLA Aviación',
+    'footer.links.cargo': 'SIGLA Carga',
+    'footer.links.crew': 'Gestión de Tripulación',
+    'footer.links.bi': 'Business Intelligence',
+    'footer.links.docs': 'Documentación Digital',
+    'footer.links.about': 'Acerca de Nosotros',
+    'footer.links.clients': 'Clientes',
+    'footer.links.careers': 'Carreras',
+    'footer.links.blog': 'Blog',
+    'footer.links.contact': 'Contacto',
+    'footer.links.privacy': 'Política de Privacidad',
+    'footer.links.terms': 'Términos de Servicio',
+    'footer.links.support': 'Soporte',
+    'footer.copyright': '© 2024 LATOP - Sistema Integrado de Gestión de Líneas Aéreas. Todos los derechos reservados.',
     
     // Pages
     'pages.aviation.title': 'SIGLA Aviación',
