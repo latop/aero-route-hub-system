@@ -78,6 +78,10 @@ const translations = {
     'features.flexible.export': 'Exportação flexível',
     'features.predictive.analytics': 'Análises preditivas',
     
+    // Clients
+    'clients.title': 'Clientes que Confiam no SIGLA',
+    'clients.subtitle': 'Empresas de aviação e logística que confiam em nossas soluções',
+    
     // Pages
     'pages.aviation.title': 'SIGLA Aviação',
     'pages.cargo.title': 'SIGLA Carga',
@@ -152,12 +156,16 @@ const translations = {
     'features.flexible.export': 'Flexible export',
     'features.predictive.analytics': 'Predictive analytics',
     
+    // Clients  
+    'clients.title': 'Clients Who Trust SIGLA',
+    'clients.subtitle': 'Aviation and logistics companies that trust our solutions',
+    
     // Pages
     'pages.aviation.title': 'SIGLA Aviation',
-    'pages.cargo.title': 'SIGLA Cargo',
-    'pages.about.title': 'About Us',
-    'pages.contact.title': 'Contact',
-    'pages.products.title': 'Products',
+    'pages.cargo.title': 'SIGLA Carga',
+    'pages.about.title': 'Sobre Nós',
+    'pages.contact.title': 'Contato',
+    'pages.products.title': 'Produtos',
   },
   es: {
     // Header
@@ -225,6 +233,10 @@ const translations = {
     'features.custom.kpis': 'KPIs personalizados',
     'features.flexible.export': 'Exportación flexible',
     'features.predictive.analytics': 'Análisis predictivos',
+    
+    // Clients
+    'clients.title': 'Clientes que Confían en SIGLA', 
+    'clients.subtitle': 'Empresas de aviación y logística que confían en nuestras soluciones',
     
     // Pages
     'pages.aviation.title': 'SIGLA Aviación',
