@@ -8,53 +8,57 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* High Contrast Navy & White Design System */
     --background: 0 0% 100%;
-    --foreground: 210 24% 16%;
+    --foreground: 215 85% 8%;           /* Ultra deep navy for maximum contrast */
 
     --card: 0 0% 100%;
-    --card-foreground: 210 24% 16%;
+    --card-foreground: 215 85% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 24% 16%;
+    --popover-foreground: 215 85% 8%;
 
-    /* Aviation blue inspired by Leon Software */
-    --primary: 221 83% 24%;
-    --primary-foreground: 0 0% 98%;
-    --primary-dark: 221 85% 18%;
+    /* Primary - Ultra Deep Navy */
+    --primary: 215 85% 8%;              /* Ultra deep navy #0a0f1a */
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 215 90% 5%;
 
-    /* Aviation green accent */
-    --secondary: 135 80% 45%;
-    --secondary-foreground: 0 0% 98%;
+    /* Secondary - Pure White with strong contrast */
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 215 85% 8%;
 
-    --muted: 220 13% 96%;
-    --muted-foreground: 215 16% 47%;
+    /* Muted - High contrast grays */
+    --muted: 215 20% 95%;
+    --muted-foreground: 215 40% 35%;
 
-    --accent: 135 80% 45%;
-    --accent-foreground: 0 0% 98%;
+    /* Accent - Clean white with navy contrast */
+    --accent: 0 0% 98%;
+    --accent-foreground: 215 85% 8%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 221 83% 24%;
+    /* High contrast borders */
+    --border: 215 25% 85%;
+    --input: 215 25% 85%;
+    --ring: 215 85% 8%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Aviation-specific colors */
-    --aviation-blue: 221 83% 24%;
-    --aviation-blue-dark: 221 85% 18%;
-    --aviation-green: 135 80% 45%;
-    --aviation-light: 220 30% 97%;
+    /* High Contrast Aviation Theme */
+    --aviation-blue: 215 85% 8%;        /* Ultra deep navy */
+    --aviation-blue-light: 215 60% 25%; /* Medium navy for accents */
+    --aviation-blue-medium: 215 70% 15%; /* Deep navy */
+    --aviation-blue-dark: 215 90% 5%;   /* Almost black navy */
+    --aviation-white: 0 0% 100%;        /* Pure white */
     
-    /* Gradients */
+    /* Clean gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--aviation-blue-dark)), hsl(var(--aviation-blue)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--aviation-green)), hsl(135 75% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--aviation-blue)), hsl(var(--aviation-blue-light)));
     
-    /* Patterns and effects */
-    --pattern-dots: radial-gradient(circle at 1px 1px, hsl(var(--aviation-blue) / 0.15) 1px, transparent 0);
-    --shadow-aviation: 0 10px 30px -10px hsl(var(--aviation-blue) / 0.3);
-    --shadow-card: 0 4px 20px -4px hsl(var(--aviation-blue) / 0.1);
+    /* Minimal shadows */
+    --shadow-subtle: 0 1px 3px 0 hsl(var(--aviation-blue) / 0.1);
+    --shadow-card: 0 2px 8px 0 hsl(var(--aviation-blue) / 0.08);
 
     --sidebar-background: 0 0% 98%;
 
@@ -74,39 +78,41 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 221 85% 6%;
-    --foreground: 0 0% 98%;
+    /* Dark mode - Inverted minimalist design */
+    --background: 215 65% 15%;
+    --foreground: 0 0% 100%;
 
-    --card: 221 85% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 215 70% 10%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 221 85% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 215 70% 10%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 221 83% 24%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 215 65% 15%;
 
-    --secondary: 135 80% 45%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 215 70% 10%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 221 70% 12%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 215 60% 20%;
+    --muted-foreground: 215 20% 70%;
 
-    --accent: 135 80% 45%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 215 60% 20%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 75% 55%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 221 70% 12%;
-    --input: 221 70% 12%;
-    --ring: 135 80% 45%;
+    --border: 215 50% 25%;
+    --input: 215 50% 25%;
+    --ring: 0 0% 100%;
 
     /* Dark mode aviation colors */
-    --aviation-blue: 221 83% 35%;
-    --aviation-blue-dark: 221 85% 18%;
-    --aviation-green: 135 80% 45%;
-    --aviation-light: 221 70% 12%;
+    --aviation-blue: 215 40% 60%;
+    --aviation-blue-light: 215 50% 70%;
+    --aviation-blue-medium: 215 45% 50%;
+    --aviation-blue-dark: 215 70% 10%;
+    --aviation-white: 0 0% 100%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

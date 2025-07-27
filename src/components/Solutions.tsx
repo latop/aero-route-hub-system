@@ -1,50 +1,54 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Plane, Truck, Users, Calendar, FileText, BarChart3 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Solutions = () => {
+  const { t } = useLanguage();
   const solutions = [
     {
       icon: Plane,
-      title: "Transporte Aéreo",
-      description: "Gestão completa para companhias aéreas, táxis aéreos e aviação executiva",
-      features: ["Programação de voos", "Gestão de tripulantes", "Controle de manutenção", "Relatórios operacionais"],
+      title: t('solutions.aviation.title'),
+      subtitle: t('solutions.aviation.subtitle'),
+      description: t('solutions.aviation.description'),
+      features: [t('features.flight.programming'), t('features.crew.management'), t('features.maintenance.control'), t('features.operational.reports')],
       color: "text-aviation-blue"
     },
     {
       icon: Truck,
-      title: "Transporte Rodoviário",
-      description: "Soluções para empresas de transporte rodoviário de carga e passageiros",
-      features: ["Roteirização inteligente", "Controle de motoristas", "Gestão de frota", "Monitoramento em tempo real"],
-      color: "text-aviation-green"
+      title: t('solutions.cargo.title'),
+      subtitle: t('solutions.cargo.subtitle'),
+      description: t('solutions.cargo.description'),
+      features: [t('features.smart.routing'), t('features.driver.control'), t('features.fleet.management'), t('features.realtime.monitoring')],
+      color: "text-aviation-blue"
     },
     {
       icon: Users,
-      title: "Gestão de Tripulantes",
-      description: "Controle completo de escalas, qualificações e disponibilidade",
-      features: ["Escalas automáticas", "Controle de jornada", "Qualificações", "Reservas e folgas"],
+      title: t('solutions.crew.title'),
+      description: t('solutions.crew.description'),
+      features: [t('features.automatic.scheduling'), t('features.workday.control'), t('features.qualifications'), t('features.reserves.days.off')],
       color: "text-aviation-blue"
     },
     {
       icon: Calendar,
-      title: "Programação Inteligente",
-      description: "Sistema avançado de planejamento e otimização de recursos",
-      features: ["Otimização automática", "Múltiplos cenários", "Integração com mercado", "Previsões de demanda"],
-      color: "text-aviation-green"
+      title: t('solutions.scheduling.title'),
+      description: t('solutions.scheduling.description'),
+      features: [t('features.automatic.optimization'), t('features.multiple.scenarios'), t('features.market.integration'), t('features.demand.forecasting')],
+      color: "text-aviation-blue"
     },
     {
       icon: FileText,
-      title: "Documentação Digital",
-      description: "Gestão completa de documentos e certificações",
-      features: ["Controle de validade", "Alertas automáticos", "Backup seguro", "Acesso mobile"],
+      title: t('solutions.docs.title'),
+      description: t('solutions.docs.description'),
+      features: [t('features.validity.control'), t('features.automatic.alerts'), t('features.secure.backup'), t('features.mobile.access')],
       color: "text-aviation-blue"
     },
     {
       icon: BarChart3,
-      title: "Business Intelligence",
-      description: "Relatórios avançados e análises para tomada de decisão",
-      features: ["Dashboards interativos", "KPIs personalizados", "Exportação flexível", "Análises preditivas"],
-      color: "text-aviation-green"
+      title: t('solutions.bi.title'),
+      description: t('solutions.bi.description'),
+      features: [t('features.interactive.dashboards'), t('features.custom.kpis'), t('features.flexible.export'), t('features.predictive.analytics')],
+      color: "text-aviation-blue"
     }
   ];
 
@@ -53,10 +57,10 @@ const Solutions = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Soluções <span className="text-aviation-green">Completas</span>
+            {t('solutions.title')} <span className="text-aviation-blue">{t('solutions.completas')}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ferramentas especializadas para diversos tipos de empresas de transporte
+            {t('solutions.subtitle')}
           </p>
         </div>
 
@@ -73,16 +77,21 @@ const Solutions = () => {
                 <CardTitle className="text-xl font-bold text-foreground mb-2">
                   {solution.title}
                 </CardTitle>
+                {solution.subtitle && (
+                  <div className="text-sm text-aviation-blue font-medium mb-2">
+                    {solution.subtitle}
+                  </div>
+                )}
                 <CardDescription className="text-muted-foreground">
                   {solution.description}
                 </CardDescription>
               </CardHeader>
               
               <CardContent>
-                <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2 mb-6">
                   {solution.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                      <div className="w-2 h-2 bg-aviation-green rounded-full mr-3 flex-shrink-0" />
+                      <div className="w-2 h-2 bg-aviation-blue rounded-full mr-3 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
@@ -90,9 +99,9 @@ const Solutions = () => {
                 
                 <Button 
                   variant="outline" 
-                  className="w-full group-hover:border-aviation-green group-hover:text-aviation-green transition-colors duration-300"
+                  className="w-full group-hover:border-aviation-blue group-hover:text-aviation-blue transition-colors duration-300"
                 >
-                  Saiba Mais
+                  {t('solutions.cta')}
                 </Button>
               </CardContent>
             </Card>
@@ -101,7 +110,7 @@ const Solutions = () => {
 
         <div className="text-center mt-12">
           <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-            Solicitar Demonstração Completa
+            {t('solutions.demo')}
           </Button>
         </div>
       </div>
