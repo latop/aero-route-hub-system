@@ -56,8 +56,7 @@ export default {
 				aviation: {
 					blue: 'hsl(var(--aviation-blue))',
 					'blue-dark': 'hsl(var(--aviation-blue-dark))',
-					'blue-light': 'hsl(var(--aviation-blue-light))',
-					'blue-medium': 'hsl(var(--aviation-blue-medium))',
+					green: 'hsl(var(--aviation-green))',
 					light: 'hsl(var(--aviation-light))'
 				},
 				sidebar: {
