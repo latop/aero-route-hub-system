@@ -82,6 +82,10 @@ const translations = {
     'clients.title': 'Clientes que Confiam no SIGLA',
     'clients.subtitle': 'Empresas de aviação e logística que confiam em nossas soluções',
     
+    // Contact
+    'contact.title': 'Fale Conosco',
+    'contact.subtitle': 'Entre em contato e descubra como o SIGLA pode otimizar suas operações',
+    
     // Pages
     'pages.aviation.title': 'SIGLA Aviação',
     'pages.cargo.title': 'SIGLA Carga',
@@ -160,12 +164,16 @@ const translations = {
     'clients.title': 'Clients Who Trust SIGLA',
     'clients.subtitle': 'Aviation and logistics companies that trust our solutions',
     
+    // Contact
+    'contact.title': 'Contact Us',
+    'contact.subtitle': 'Get in touch and discover how SIGLA can optimize your operations',
+    
     // Pages
     'pages.aviation.title': 'SIGLA Aviation',
-    'pages.cargo.title': 'SIGLA Carga',
-    'pages.about.title': 'Sobre Nós',
-    'pages.contact.title': 'Contato',
-    'pages.products.title': 'Produtos',
+    'pages.cargo.title': 'SIGLA Cargo',
+    'pages.about.title': 'About Us',
+    'pages.contact.title': 'Contact',
+    'pages.products.title': 'Products',
   },
   es: {
     // Header
@@ -237,6 +245,10 @@ const translations = {
     // Clients
     'clients.title': 'Clientes que Confían en SIGLA', 
     'clients.subtitle': 'Empresas de aviación y logística que confían en nuestras soluciones',
+    
+    // Contact
+    'contact.title': 'Contáctanos',
+    'contact.subtitle': 'Ponte en contacto y descubre cómo SIGLA puede optimizar tus operaciones',
     
     // Pages
     'pages.aviation.title': 'SIGLA Aviación',
