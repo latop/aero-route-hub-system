@@ -8,48 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Minimalist Navy & White Design System */
+    /* High Contrast Navy & White Design System */
     --background: 0 0% 100%;
-    --foreground: 215 65% 15%;          /* Deep navy */
+    --foreground: 215 85% 8%;           /* Ultra deep navy for maximum contrast */
 
     --card: 0 0% 100%;
-    --card-foreground: 215 65% 15%;
+    --card-foreground: 215 85% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 65% 15%;
+    --popover-foreground: 215 85% 8%;
 
-    /* Primary - Navy Blue */
-    --primary: 215 65% 15%;             /* Deep navy blue #1a2332 */
+    /* Primary - Ultra Deep Navy */
+    --primary: 215 85% 8%;              /* Ultra deep navy #0a0f1a */
     --primary-foreground: 0 0% 100%;
-    --primary-dark: 215 70% 10%;
+    --primary-dark: 215 90% 5%;
 
-    /* Secondary - Pure White */
+    /* Secondary - Pure White with strong contrast */
     --secondary: 0 0% 100%;
-    --secondary-foreground: 215 65% 15%;
+    --secondary-foreground: 215 85% 8%;
 
-    /* Muted - Very light grays */
-    --muted: 210 30% 97%;
-    --muted-foreground: 215 25% 50%;
+    /* Muted - High contrast grays */
+    --muted: 215 20% 95%;
+    --muted-foreground: 215 40% 35%;
 
-    /* Accent - Subtle navy tint */
-    --accent: 215 65% 95%;
-    --accent-foreground: 215 65% 15%;
+    /* Accent - Clean white with navy contrast */
+    --accent: 0 0% 98%;
+    --accent-foreground: 215 85% 8%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Minimal borders */
-    --border: 215 15% 90%;
-    --input: 215 15% 90%;
-    --ring: 215 65% 15%;
+    /* High contrast borders */
+    --border: 215 25% 85%;
+    --input: 215 25% 85%;
+    --ring: 215 85% 8%;
 
     --radius: 0.5rem;
 
-    /* Aviation Navy & White Theme */
-    --aviation-blue: 215 65% 15%;       /* Deep navy */
-    --aviation-blue-light: 215 40% 60%; /* Lighter navy */
-    --aviation-blue-medium: 215 50% 35%; /* Medium navy */
-    --aviation-blue-dark: 215 70% 10%;  /* Darker navy */
+    /* High Contrast Aviation Theme */
+    --aviation-blue: 215 85% 8%;        /* Ultra deep navy */
+    --aviation-blue-light: 215 60% 25%; /* Medium navy for accents */
+    --aviation-blue-medium: 215 70% 15%; /* Deep navy */
+    --aviation-blue-dark: 215 90% 5%;   /* Almost black navy */
     --aviation-white: 0 0% 100%;        /* Pure white */
     
     /* Clean gradients */
