@@ -8,57 +8,61 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* High Contrast Navy & White Design System */
+    /* Leon Software Inspired Design System */
     --background: 0 0% 100%;
-    --foreground: 215 85% 8%;           /* Ultra deep navy for maximum contrast */
+    --foreground: 220 39% 11%;           /* Deep blue-navy #1a202c */
 
     --card: 0 0% 100%;
-    --card-foreground: 215 85% 8%;
+    --card-foreground: 220 39% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 85% 8%;
+    --popover-foreground: 220 39% 11%;
 
-    /* Primary - Ultra Deep Navy */
-    --primary: 215 85% 8%;              /* Ultra deep navy #0a0f1a */
+    /* Primary - Deep Navy Blue (Leon inspired) */
+    --primary: 220 39% 11%;              /* Deep navy #1a202c */
     --primary-foreground: 0 0% 100%;
-    --primary-dark: 215 90% 5%;
+    --primary-dark: 220 45% 8%;
 
-    /* Secondary - Pure White with strong contrast */
-    --secondary: 0 0% 100%;
-    --secondary-foreground: 215 85% 8%;
+    /* Secondary - Light gray with contrast */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 39% 11%;
 
-    /* Muted - High contrast grays */
-    --muted: 215 20% 95%;
-    --muted-foreground: 215 40% 35%;
+    /* Muted - Professional grays */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 20% 50%;
 
-    /* Accent - Clean white with navy contrast */
-    --accent: 0 0% 98%;
-    --accent-foreground: 215 85% 8%;
+    /* Accent - Vibrant Leon Green */
+    --accent: 99 72% 52%;                /* Vibrant green #5cb85c */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* High contrast borders */
-    --border: 215 25% 85%;
-    --input: 215 25% 85%;
-    --ring: 215 85% 8%;
+    /* Professional borders */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 99 72% 52%;
 
     --radius: 0.5rem;
 
-    /* High Contrast Aviation Theme */
-    --aviation-blue: 215 85% 8%;        /* Ultra deep navy */
-    --aviation-blue-light: 215 60% 25%; /* Medium navy for accents */
-    --aviation-blue-medium: 215 70% 15%; /* Deep navy */
-    --aviation-blue-dark: 215 90% 5%;   /* Almost black navy */
-    --aviation-white: 0 0% 100%;        /* Pure white */
+    /* Leon Aviation Theme */
+    --aviation-blue: 220 39% 11%;        /* Deep navy */
+    --aviation-blue-light: 220 30% 25%;  /* Medium navy */
+    --aviation-blue-medium: 220 35% 18%; /* Deep navy */
+    --aviation-blue-dark: 220 45% 8%;    /* Almost black navy */
+    --aviation-white: 0 0% 100%;         /* Pure white */
+    --aviation-green: 99 72% 52%;        /* Vibrant Leon green */
+    --aviation-green-dark: 99 60% 45%;   /* Darker green for hover */
     
-    /* Clean gradients */
+    /* Leon inspired gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--aviation-blue-dark)), hsl(var(--aviation-blue)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--aviation-blue)), hsl(var(--aviation-blue-light)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--aviation-green)), hsl(var(--aviation-green-dark)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--aviation-blue)), hsl(var(--aviation-blue-light)));
     
-    /* Minimal shadows */
+    /* Professional shadows */
     --shadow-subtle: 0 1px 3px 0 hsl(var(--aviation-blue) / 0.1);
-    --shadow-card: 0 2px 8px 0 hsl(var(--aviation-blue) / 0.08);
+    --shadow-card: 0 4px 12px 0 hsl(var(--aviation-blue) / 0.1);
+    --shadow-green: 0 4px 14px 0 hsl(var(--aviation-green) / 0.25);
 
     --sidebar-background: 0 0% 98%;
 
