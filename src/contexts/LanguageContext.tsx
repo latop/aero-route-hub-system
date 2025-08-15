@@ -79,12 +79,32 @@ const translations = {
     'features.predictive.analytics': 'Análises preditivas',
     
     // Clients
-    'clients.title': 'Clientes que Confiam no SIGLA',
+    'clients.title': 'Clientes que Confiam na SIGLA',
     'clients.subtitle': 'Empresas de aviação e logística que confiam em nossas soluções',
+    'clients.testimonials.first.text': 'A SIGLA revolucionou nossa operação aérea. O sistema é intuitivo e oferece controle total sobre nossas operações.',
+    'clients.testimonials.first.author': 'João Moreira',
+    'clients.testimonials.first.position': 'Diretor de Operações, AeroTrans',
+    'clients.testimonials.second.text': 'Com a SIGLA, conseguimos otimizar nossa logística de carga e reduzir custos operacionais significativamente.',
+    'clients.testimonials.second.author': 'Maria Santos',
+    'clients.testimonials.second.position': 'Gerente de Logística, CargoFast',
     
     // Contact
-    'contact.title': 'Fale Conosco',
-    'contact.subtitle': 'Entre em contato e descubra como o SIGLA pode otimizar suas operações',
+    'contact.title': 'Entre em Contato',
+    'contact.subtitle': 'Entre em contato e descubra como a SIGLA pode otimizar suas operações',
+    'contact.form.title': 'Formulário de Contato',
+    'contact.form.name': 'Nome',
+    'contact.form.namePlaceholder': 'Digite seu nome',
+    'contact.form.company': 'Empresa',
+    'contact.form.companyPlaceholder': 'Digite o nome da empresa',
+    'contact.form.email': 'E-mail',
+    'contact.form.emailPlaceholder': 'Digite seu e-mail',
+    'contact.form.phone': 'Telefone',
+    'contact.form.phonePlaceholder': 'Digite seu telefone',
+    'contact.form.segment': 'Segmento',
+    'contact.form.segmentPlaceholder': 'Selecione o segmento',
+    'contact.form.message': 'Mensagem',
+    'contact.form.messagePlaceholder': 'Digite sua mensagem',
+    'contact.form.send': 'Enviar Mensagem',
     
     // Footer
     'footer.description': 'Sistema integrado para gestão completa de operações de transporte aéreo e rodoviário.',
@@ -179,13 +199,33 @@ const translations = {
     'features.flexible.export': 'Flexible export',
     'features.predictive.analytics': 'Predictive analytics',
     
-    // Clients  
+    // Clients
     'clients.title': 'Clients Who Trust SIGLA',
     'clients.subtitle': 'Aviation and logistics companies that trust our solutions',
+    'clients.testimonials.first.text': 'SIGLA revolutionized our aviation operation. The system is intuitive and offers complete control over our operations.',
+    'clients.testimonials.first.author': 'John Morrison',
+    'clients.testimonials.first.position': 'Operations Director, AeroTrans',
+    'clients.testimonials.second.text': 'With SIGLA, we managed to optimize our cargo logistics and significantly reduce operational costs.',
+    'clients.testimonials.second.author': 'Mary Santos',
+    'clients.testimonials.second.position': 'Logistics Manager, CargoFast',
     
     // Contact
     'contact.title': 'Contact Us',
     'contact.subtitle': 'Get in touch and discover how SIGLA can optimize your operations',
+    'contact.form.title': 'Contact Form',
+    'contact.form.name': 'Name',
+    'contact.form.namePlaceholder': 'Enter your name',
+    'contact.form.company': 'Company',
+    'contact.form.companyPlaceholder': 'Enter company name',
+    'contact.form.email': 'Email',
+    'contact.form.emailPlaceholder': 'Enter your email',
+    'contact.form.phone': 'Phone',
+    'contact.form.phonePlaceholder': 'Enter your phone',
+    'contact.form.segment': 'Segment',
+    'contact.form.segmentPlaceholder': 'Select segment',
+    'contact.form.message': 'Message',
+    'contact.form.messagePlaceholder': 'Enter your message',
+    'contact.form.send': 'Send Message',
     
     // Footer
     'footer.description': 'Integrated system for complete management of air and road transport operations.',
@@ -283,10 +323,30 @@ const translations = {
     // Clients
     'clients.title': 'Clientes que Confían en SIGLA', 
     'clients.subtitle': 'Empresas de aviación y logística que confían en nuestras soluciones',
+    'clients.testimonials.first.text': 'SIGLA revolucionó nuestra operación aérea. El sistema es intuitivo y ofrece control total sobre nuestras operaciones.',
+    'clients.testimonials.first.author': 'João Moreira',
+    'clients.testimonials.first.position': 'Director de Operaciones, AeroTrans',
+    'clients.testimonials.second.text': 'Con SIGLA, logramos optimizar nuestra logística de carga y reducir significativamente los costos operacionales.',
+    'clients.testimonials.second.author': 'María Santos',
+    'clients.testimonials.second.position': 'Gerente de Logística, CargoFast',
     
     // Contact
     'contact.title': 'Contáctanos',
     'contact.subtitle': 'Ponte en contacto y descubre cómo SIGLA puede optimizar tus operaciones',
+    'contact.form.title': 'Formulario de Contacto',
+    'contact.form.name': 'Nombre',
+    'contact.form.namePlaceholder': 'Ingresa tu nombre',
+    'contact.form.company': 'Empresa',
+    'contact.form.companyPlaceholder': 'Ingresa el nombre de la empresa',
+    'contact.form.email': 'Correo',
+    'contact.form.emailPlaceholder': 'Ingresa tu correo',
+    'contact.form.phone': 'Teléfono',
+    'contact.form.phonePlaceholder': 'Ingresa tu teléfono',
+    'contact.form.segment': 'Segmento',
+    'contact.form.segmentPlaceholder': 'Selecciona el segmento',
+    'contact.form.message': 'Mensaje',
+    'contact.form.messagePlaceholder': 'Ingresa tu mensaje',
+    'contact.form.send': 'Enviar Mensaje',
     
     // Footer
     'footer.description': 'Sistema integrado para gestión completa de operaciones de transporte aéreo y terrestre.',
