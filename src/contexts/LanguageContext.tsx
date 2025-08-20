@@ -105,6 +105,12 @@ const translations = {
     'contact.form.message': 'Mensagem',
     'contact.form.messagePlaceholder': 'Digite sua mensagem',
     'contact.form.send': 'Enviar Mensagem',
+    'contact.form.submit': 'Enviar',
+    'contact.form.response': 'Obrigado! Sua mensagem foi enviada com sucesso.',
+    'contact.info.phone': 'Telefone',
+    'contact.info.email': 'E-mail',
+    'contact.info.address': 'Endereço',
+    'contact.info.hours': 'Horário de Funcionamento',
     
     // Footer
     'footer.description': 'Sistema integrado para gestão completa de operações de transporte aéreo e rodoviário.',
@@ -226,6 +232,12 @@ const translations = {
     'contact.form.message': 'Message',
     'contact.form.messagePlaceholder': 'Enter your message',
     'contact.form.send': 'Send Message',
+    'contact.form.submit': 'Submit',
+    'contact.form.response': 'Thank you! Your message has been sent successfully.',
+    'contact.info.phone': 'Phone',
+    'contact.info.email': 'Email',
+    'contact.info.address': 'Address',
+    'contact.info.hours': 'Business Hours',
     
     // Footer
     'footer.description': 'Integrated system for complete management of air and road transport operations.',
@@ -347,6 +359,12 @@ const translations = {
     'contact.form.message': 'Mensaje',
     'contact.form.messagePlaceholder': 'Ingresa tu mensaje',
     'contact.form.send': 'Enviar Mensaje',
+    'contact.form.submit': 'Enviar',
+    'contact.form.response': '¡Gracias! Tu mensaje ha sido enviado exitosamente.',
+    'contact.info.phone': 'Teléfono',
+    'contact.info.email': 'Correo',
+    'contact.info.address': 'Dirección',
+    'contact.info.hours': 'Horario de Atención',
     
     // Footer
     'footer.description': 'Sistema integrado para gestión completa de operaciones de transporte aéreo y terrestre.',
