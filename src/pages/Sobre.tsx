@@ -166,41 +166,61 @@ const Sobre = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="relative">
-              {/* Linha do tempo */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-aviation-blue/20"></div>
+              {/* Linha principal da timeline */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-aviation-blue via-aviation-blue to-aviation-blue/60 shadow-sm"></div>
               
               {timeline.map((item, index) => (
-                <div key={index} className={`relative flex items-center mb-8 ${
+                <div key={index} className={`relative flex items-center mb-12 ${
                   index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-                }`}>
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                    <Card className="hover:shadow-card-hover transition-all duration-300">
-                      <CardHeader>
-                        <div className="flex items-center space-x-2">
-                          <Badge variant="secondary" className="bg-aviation-blue text-white">
-                            {item.year}
-                          </Badge>
-                        </div>
-                        <CardTitle className="text-xl font-bold text-foreground">
-                          {item.title}
-                        </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-muted-foreground">
-                          {item.description}
-                        </p>
-                      </CardContent>
-                    </Card>
+                } animate-fade-in`} style={{ animationDelay: `${index * 0.2}s` }}>
+                  
+                  {/* Card da timeline */}
+                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12 text-right' : 'pl-12 text-left'}`}>
+                    <div className="relative">
+                      {/* Linha conectora */}
+                      <div className={`absolute top-6 w-8 h-0.5 bg-aviation-blue/40 ${
+                        index % 2 === 0 ? 'right-0' : 'left-0'
+                      }`}></div>
+                      
+                      <Card className="hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-aviation-blue">
+                        <CardHeader className="pb-3">
+                          <div className={`flex items-center space-x-2 ${
+                            index % 2 === 0 ? 'justify-end' : 'justify-start'
+                          }`}>
+                            <Badge variant="secondary" className="bg-aviation-blue text-white px-3 py-1 text-sm font-semibold">
+                              {item.year}
+                            </Badge>
+                          </div>
+                          <CardTitle className="text-xl font-bold text-foreground leading-tight">
+                            {item.title}
+                          </CardTitle>
+                        </CardHeader>
+                        <CardContent className="pt-0">
+                          <p className="text-muted-foreground leading-relaxed">
+                            {item.description}
+                          </p>
+                        </CardContent>
+                      </Card>
+                    </div>
                   </div>
                   
-                  {/* Indicador na linha do tempo */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-aviation-blue rounded-full border-4 border-background"></div>
+                  {/* Indicador central da timeline */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                    <div className="w-6 h-6 bg-aviation-blue rounded-full border-4 border-background shadow-lg flex items-center justify-center">
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                    </div>
+                  </div>
                   
                   <div className="w-1/2"></div>
                 </div>
               ))}
+              
+              {/* Ponto final da timeline */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0">
+                <div className="w-4 h-4 bg-aviation-green rounded-full border-4 border-background shadow-lg"></div>
+              </div>
             </div>
           </div>
         </div>
