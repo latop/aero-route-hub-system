@@ -209,7 +209,7 @@ const Sobre = () => {
                   {/* Indicador central da timeline */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
                     <div className="w-6 h-6 bg-aviation-blue rounded-full border-4 border-background shadow-lg flex items-center justify-center">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                      <div className="w-2 h-2 bg-aviation-blue rounded-full"></div>
                     </div>
                   </div>
                   
